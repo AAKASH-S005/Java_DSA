@@ -29,7 +29,7 @@ public class Solution {
         for (int i = 0; i < r1; i++) {
             for (int j = 0; j < c2; j++) {
                 for (int k = 0; k < c1; k++) {  
-                    MultMat[i][j] += Mat1[i][k] * Mat2[k][j];
+                    MultMat[i][j] += Mat1[i][k] * Mat2[k][j];       // The value K is Column for Mat1 and row for Mat2
                 }
             }
         }
