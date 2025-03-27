@@ -1,4 +1,5 @@
 Java Program to find the GCD(Greatest Common Divisor)of  two numbers using Recursion
+    // Euclidian Algorithm
 
 CODE :
 
@@ -9,7 +10,7 @@ public class Solution {
     public static int gcd(int n1,int n2){
         if(n1 == 0)
             return n2;
-        return gcd(n1%n2 ,n1);
+        return gcd(n2%n1 ,n1);
     }
 
     public static void main(String[] args) {
