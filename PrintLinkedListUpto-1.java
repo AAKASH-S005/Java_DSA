@@ -7,10 +7,6 @@ CODE :
 
 import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
 class Node {
     int data;
     Node next;
@@ -33,24 +29,13 @@ class LinkedList {
             temp.next = newNode;
         }
     }
-    /*void display() {
+    void display() {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " "); 
             temp = temp.next;
         }
         System.out.println(); 
-    }*/
-    void max(){
-        Node temp = head.next;
-        int max = head.data;
-        while(temp!=null){
-            if(temp.data > max)
-                max = temp.data;
-            temp = temp.next;
-        }
-        System.out.println(max);
-        
     }
 }
 public class Solution {
@@ -64,6 +49,6 @@ public class Solution {
             }
             list.insert(value);
         }
-        list.max();
+        list.display();
     }
 }
