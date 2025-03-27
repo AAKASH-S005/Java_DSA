@@ -1,0 +1,28 @@
+Prime Numbers code in Java using Recursion 
+
+CODE :
+
+public class PrimeNumberRecursion {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        boolean isPrime = isPrime(number, 2);
+        if (isPrime) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is not a prime number.");
+        }
+    }
+    static boolean isPrime(int num, int divisor) {
+        if (num <= 2) {
+            return num == 2;
+        }
+        if (num % divisor == 0) {
+            return false; 
+        }
+        if (divisor * divisor > num) {
+            return true; 
+        }
+        return isPrime(num, divisor + 1); 
+    }
+}
