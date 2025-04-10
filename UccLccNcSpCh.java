@@ -26,7 +26,7 @@ public class Main{
         }
         System.out.println("No.of Upper Case characters : "+UCC);
         System.out.println("No.of Lower Case characters : "+LCC);
-        System.out.println("No.of Lower Case characters : "+Numbers);
+        System.out.println("No.of Numerical characters : "+Numbers);
         System.out.println("No.of Special Characters : "+SpCh); 
     }
 }
