@@ -1,7 +1,7 @@
 2) Selection Sort Java Code implementation -> A simple sorting algorithm that returns the final sorted array by repeatedly checking for the minimum element and placed it at the beginning
 CODE :
 import java.util.*;
-public class Main{
+public class SelectionSort{
     public static void selectionSort(int[] arr){
         int n = arr.length;
         for(int i=0;i<n-1;i++){
